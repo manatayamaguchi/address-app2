@@ -1,0 +1,26 @@
+html{
+    background-color: antiquewhite;
+}
+
+table { 
+    margin-left: 100px;
+    margin-top: 70px;
+    border-collapse: collapse;
+    border:solid #333 1px
+}
+
+th {
+    background-color: aqua;
+  }
+
+td {
+    padding: 5px;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.add{
+    margin-left: 470px;
+}
