@@ -30,13 +30,13 @@ class FormController extends Controller
     public function index (){
         $data = Form::orderBy('userName', 'asc')->get();    //formsテーブルからデータを、名前の昇順に、すべて取り出して$dataに代入する
 
-        return view('list', compact('data'));
+        return view('list', compact('data'));//このdataはコレクションのインスタンス
     }
 
     //アドレス登録編集画面表示
     public function edit ($id){    
         $data = Form::where('id', $id)->first();
-        return view('edit', compact('data'));
+        return view('edit', compact('data'));//このdataはモデルのインスタンス
     }
 
     //更新処理

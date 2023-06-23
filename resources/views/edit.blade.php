@@ -27,14 +27,17 @@
 <body>
 
 <h1>アドレス登録編集画面</h1>
-
+    @php
+        dump($data);
+    @endphp
+    
     <form action="{{ route('address.updata', ['id' => $data->id]) }}" method="post">
     @csrf
     <table>
         
         <tr>
             <td><p>氏名 :</p></td>
-            <td><input type="text" name="userName" value="{{ old('userName', $data -> userName) }}"></td>
+            <td><input type="text" name="userName" value="{{ old('userName', $data->userName) }}"></td>
         </tr>
 
         <tr>

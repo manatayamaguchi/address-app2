@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<h1>アドレス一覧画面/gitの更新確認</h1>
+<h1>アドレス一覧画面</h1>
 
     <table border="1">
         <tr>
@@ -18,7 +18,10 @@
             <th></th>
             <th></th>
         </tr>
-
+    @php
+        dump($data);
+    @endphp
+    
     @foreach($data as $datas)
         <tr>
             <td>{{$datas->userName}}</td>

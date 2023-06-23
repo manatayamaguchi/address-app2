@@ -22,6 +22,7 @@ table {
 </style>
 </head>
 <body>
+    
 <h1>アドレス登録編集画面</h1>
 @foreach ($errors->all() as $error)  <!-- エラーメッセージ !-->
       <p>{{$error}}</p>
