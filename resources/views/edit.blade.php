@@ -31,6 +31,10 @@
         dump($data);
     @endphp
     
+    @foreach ($errors->all() as $error)  <!--エラーメッセージ（何やってんのかわかんないけどValidateRequsetに設定したエラーメッセージが表示される） -->
+        <p>{{$error}}</p> 
+    @endforeach
+
     <form action="{{ route('address.updata', ['id' => $data->id]) }}" method="post">
     @csrf
     <table>
